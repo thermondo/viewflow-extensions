@@ -4,7 +4,8 @@ Views for view nodes that add additional behavior.
 .. inheritance-diagram:: viewflow_extensions.views
     :parts: 1
 """
-from viewflow.activation import STATUS
+
+from viewflow.workflow import STATUS
 
 from .utils import make_form_or_formset_fields_not_required
 
@@ -15,7 +16,7 @@ class SavableViewActivationMixin:
 
     Usage::
 
-        from viewflow.flow.views import UpdateProcessView
+        from viewflow.workflow.flow.views import UpdateProcessView
 
         class MyCustomView(SavableViewMixin, UpdateProcessView):
             pass

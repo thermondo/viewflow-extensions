@@ -1,6 +1,7 @@
-from viewflow import flow
-from viewflow.base import Flow, this
-from viewflow.flow.views import CreateProcessView
+from viewflow import this
+from viewflow.workflow import flow
+from viewflow.workflow.base import Flow
+from viewflow.workflow.flow.views import CreateProcessView
 
 from .models import SavableProcess
 from .views import SavableProcessView

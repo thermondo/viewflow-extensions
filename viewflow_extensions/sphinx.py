@@ -12,12 +12,13 @@ Example::
     ]
 
 """
+
 import inspect
 import os
 from tempfile import mkdtemp
 
-from viewflow import chart
-from viewflow.base import Flow
+from viewflow.workflow import chart
+from viewflow.workflow.base import Flow
 
 
 def process_flows(app, what, name, obj, options, lines):

@@ -1,5 +1,5 @@
 from django.db import models
-from viewflow.models import Process
+from viewflow.workflow.models import Process
 
 
 class SavableProcess(Process):
